@@ -5,8 +5,6 @@ import cv2
 import numpy as np
 import math
 
-# Set working directory
-os.chdir(r"/Users/sunnywang/Library/CloudStorage/OneDrive-McGillUniversity/Research/Farivar lab/stimuli/experiment_img")
 
 def BPF_loop():
 
@@ -36,7 +34,7 @@ def BPF_loop():
 
     # Read names of the less blurry images
     img1_path_list= []
-    folder1 = '/Users/sunnywang/Library/CloudStorage/OneDrive-McGillUniversity/Research/Farivar lab/stimuli/LPF_sig='+str(folder1_sig)
+    folder1 = ''+str(folder1_sig)
     for img1_path in os.listdir(folder1):
         if img1_path != '.DS_Store':
             img1_path_list.append(img1_path)
@@ -46,7 +44,7 @@ def BPF_loop():
     # Read in names of the more blurry images
     img2_path_list= []
 
-    folder2 = '/Users/sunnywang/Library/CloudStorage/OneDrive-McGillUniversity/Research/Farivar lab/stimuli/LPF_sig='+str(folder2_sig)
+    folder2 = ''+str(folder2_sig)
     for img2_path in os.listdir(folder2):
         if img2_path != '.DS_Store':
             img2_path_list.append(img2_path)
@@ -95,7 +93,7 @@ def BPF_loop():
         cv2.waitKey(500)
 
         # Save images to path
-        os.chdir(r"/Users/sunnywang/Library/CloudStorage/OneDrive-McGillUniversity/Research/Farivar lab/stimuli/experiment_img/"+result_img_type)
+        os.chdir(r""+result_img_type)
         cv2.imwrite(result_img_name+'_'+'sigd2.0_'+result_img_type+'.png',result)
 
 
