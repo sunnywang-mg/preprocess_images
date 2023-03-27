@@ -6,7 +6,7 @@ import numpy as np
 import math
 
 # Set working directory
-os.chdir(r"/Users/sunnywang/Library/CloudStorage/OneDrive-McGillUniversity/Research/Farivar lab/stimuli/experiment_img")
+os.chdir(r"")
 
 def final_loop():
 
