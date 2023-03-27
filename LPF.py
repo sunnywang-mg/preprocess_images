@@ -5,7 +5,7 @@ import math
 import numpy as np
 
 
-folder = '/Users/sunnywang/Library/CloudStorage/OneDrive-McGillUniversity/Research/Farivar lab/stimuli/original_img'
+folder = ''
 
 for img_path in os.listdir(folder):
     if img_path != '.DS_Store':
@@ -19,7 +19,7 @@ for img_path in os.listdir(folder):
         # Show and save output image
         name = img_path.replace('.jpg','')
 
-        os.chdir(r'/Users/sunnywang/Library/CloudStorage/OneDrive-McGillUniversity/Research/Farivar lab/stimuli/LPF_sig='+str(round(sigma,2)))
+        os.chdir(r'/LPF_sig='+str(round(sigma,2)))
         cv2.imwrite(name+'_sig='+str(round(sigma,2))+'.png',gaussian_LP)
         cv2.imshow("", gaussian_LP)
         cv2.waitKey(200)
