@@ -2,7 +2,7 @@ import os
 import cv2
 
 # Change working directory
-os.chdir(r"/Users/sunnywang/Library/CloudStorage/OneDrive-McGillUniversity/Research/Farivar lab/stimuli/raw_img")
+os.chdir(r"")
 
 # Load image
 img_name = 'mgh'
@@ -16,7 +16,7 @@ print('img:',img.shape)
 
 name = img_name+'.jpg'
 
-os.chdir(r"/Users/sunnywang/Library/CloudStorage/OneDrive-McGillUniversity/Research/Farivar lab/stimuli/original_img")
+os.chdir(r"")
 cv2.imwrite(name, img)
 cv2.imshow(name,img)
 cv2.waitKey(2000)
