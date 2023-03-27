@@ -36,7 +36,7 @@ def final_loop():
 
     # Read names of the less blurry images
     img1_path_list= []
-    folder1 = '/Users/sunnywang/Library/CloudStorage/OneDrive-McGillUniversity/Research/Farivar lab/stimuli/experiment_img/base'+str(folder1_sig)
+    folder1 = '/base'+str(folder1_sig)
     for img1_path in os.listdir(folder1):
         if img1_path != '.DS_Store':
             img1_path_list.append(img1_path)
@@ -46,7 +46,7 @@ def final_loop():
     # Read in names of the more blurry images
     img2_path_list= []
 
-    folder2 = '/Users/sunnywang/Library/CloudStorage/OneDrive-McGillUniversity/Research/Farivar lab/stimuli/experiment_img/base'+str(folder2_sig)
+    folder2 = '/base'+str(folder2_sig)
     for img2_path in os.listdir(folder2):
         if img2_path != '.DS_Store':
             img2_path_list.append(img2_path)
@@ -95,7 +95,7 @@ def final_loop():
         cv2.waitKey(300)
 
         # Save images to path
-        os.chdir(r"/Users/sunnywang/Library/CloudStorage/OneDrive-McGillUniversity/Research/Farivar lab/stimuli/experiment_img/"+result_img_type)
+        os.chdir(r""+result_img_type)
         cv2.imwrite(result_img_name+result_img_type+'.png',result)
 
         # Calculate mean intensity
