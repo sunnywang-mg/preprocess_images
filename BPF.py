@@ -1,5 +1,5 @@
 # By Sunny Wang in March 2023
-# Difference of Gaussian (DOG) Bandpass filter
+# Difference of Gaussian (DOG) Bandpass image filter
 
 import os
 import cv2
